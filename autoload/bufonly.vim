@@ -12,19 +12,6 @@ vim9script
 # Without any arguments the current buffer is kept.  With an argument the
 # buffer name/number supplied is kept.
 
-command! -nargs=? -complete=buffer -bang Bonly {
-		g:BufOnly('<args>', '<bang>')
-	}
-command! -nargs=? -complete=buffer -bang BOnly {
-		g:BufOnly('<args>', '<bang>')
-	}
-command! -nargs=? -complete=buffer -bang Bufonly {
-		g:BufOnly('<args>', '<bang>')
-	}
-command! -nargs=? -complete=buffer -bang BufOnly {
-		g:BufOnly('<args>', '<bang>')
-	}
-
 def g:BufOnly(b: string, bang: string): void
 	var buffer: number
 
